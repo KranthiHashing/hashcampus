@@ -55,8 +55,8 @@ exports.contactUs = (req, res) => {
 
     const mailOptions = {
         from: req.body.name + '" "<kranthidevsai@hashing.company>', // sender address
-        // to: 'hashingCompany@gmail.com,ceo@hashing.company', // list of receivers
-        to: 'kranthisai85@gmail.com', // list of receivers
+        to: 'hashingCompany@gmail.com,ceo@hashing.company', // list of receivers
+        // to: 'kranthisai85@gmail.com', // list of receivers
         subject: "New Message from " + req.body.name + " via Contact Form", // Subject line
         html: htmlOutput, // html body
     };
