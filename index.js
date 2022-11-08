@@ -15,6 +15,9 @@ app.get("/contact", (req, res) => {
     res.sendFile(__dirname + "/contact.html");
 });
 
+app.get("/about", (req, res) => {
+    res.sendFile(__dirname + "/about.html");
+});
 
 app.post('/', contactUs);
 

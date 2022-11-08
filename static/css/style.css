@@ -319,6 +319,80 @@ legend {
   }
 }
 
+
+.boxcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* max-width: 1500px; */
+  margin-block: 2rem;
+  gap: 1.6rem;
+}
+
+.image {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.new-card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ECE9E6;
+background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
+}
+
+
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.fade-in-image { animation: fadeIn 5s; }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fade-in-text {
+  font-family: Arial;
+  font-size: 150px;
+  animation: fadeIn 5s;
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+section { height: 100%; }
+
 progress {
   vertical-align: baseline;
 }
@@ -6242,7 +6316,38 @@ a.close.disabled {
   list-style: none;
 }
 
+.two-carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  /* margin-left: 15%; */
+  list-style: none;
+}
+
 .carousel-indicators li {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  transition: opacity 0.6s ease;
+}
+
+.two-carousel-indicators li {
   box-sizing: content-box;
   flex: 0 1 auto;
   width: 30px;
@@ -6268,6 +6373,17 @@ a.close.disabled {
 .carousel-indicators .active {
   opacity: 1;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .two-carousel-indicators li {
+    transition: none;
+  }
+}
+
+.two-carousel-indicators .active {
+  opacity: 1;
+}
+
 
 .carousel-caption {
   position: absolute;
@@ -9826,6 +9942,43 @@ h6,
     right: calc(100% - 45px);
   }
   .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.two-carousel-indicators {
+  /* width: 60px; */
+  /* top: 0; */
+  /* right: calc(100% - 60px); */
+  margin: 0;
+  bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.two-carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  margin: 5px 0;
+  background: #44425A;
+  border: 5px solid #FFFFFF;
+  border-radius: 15px;
+}
+
+.two-carousel-indicators .active {
+  background: #FF6600;
+}
+
+@media (max-width: 991.98px) {
+  .two-carousel-indicators {
+    width: 45px;
+    right: calc(100% - 45px);
+  }
+  .two-carousel-indicators li {
     width: 15px;
     height: 15px;
   }
