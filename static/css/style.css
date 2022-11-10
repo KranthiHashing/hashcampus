@@ -9845,6 +9845,7 @@ h5,
 h6,
 .font-weight-medium {
   font-weight: 500 !important;
+  text-align: center;
 }
 
 .btn-square {

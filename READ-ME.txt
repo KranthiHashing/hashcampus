@@ -1,11 +1,11 @@
-  =>  Template Name    : ECOURSES - Online Courses HTML Template
+  =>  Template Name    : hashCampus - Self learning app makes learning interactive through AR
 
-  =>  Template Link    : https://htmlcodex.com/online-courses-html-template
+  =>  Template Link    : https://hashing.company//online-courses-html-template
 
-  =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
+  =>  Template License : https://hashing.company//license (or read the LICENSE.txt file)
 
-  =>  Template Author  : HTML Codex
+  =>  Template Author  : HASHING INNOVATION PVT LTD.
 
-  =>  Author Website   : https://htmlcodex.com
+  =>  Author Website   : https://hashing.company/
 
-  =>  About HTML Codex : HTML Codex is one of the top creators and publishers of Free HTML templates, HTML landing pages, HTML email templates and HTML snippets in the world. Read more at ( https://htmlcodex.com/about-us )
+  =>  About HASHING INNOVATION PVT LTD. : HASHING INNOVATION PVT LTD. is one of the top creators and publishers of Free HTML templates, HTML landing pages, HTML email templates and HTML snippets in the world. Read more at ( https://hashing.company//about-us )
