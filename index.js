@@ -19,6 +19,10 @@ app.get("/about", (req, res) => {
     res.sendFile(__dirname + "/about.html");
 });
 
+app.get("/privacy", (req, res) => {
+    res.sendFile(__dirname + "/privacy.html");
+});
+
 app.post('/', contactUs);
 
 const PORT = process.env.PORT || 8080;
